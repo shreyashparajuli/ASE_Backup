@@ -59,7 +59,7 @@
             OutputWindow.BackColor = SystemColors.ActiveBorder;
             OutputWindow.Location = new Point(215, 54);
             OutputWindow.Name = "OutputWindow";
-            OutputWindow.Size = new Size(566, 422);
+            OutputWindow.Size = new Size(756, 421);
             OutputWindow.TabIndex = 2;
             OutputWindow.TabStop = false;
             OutputWindow.Paint += OutputWindow_Paint;
@@ -86,7 +86,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(793, 514);
+            ClientSize = new Size(983, 487);
             Controls.Add(btnClearCanvas);
             Controls.Add(btnSaveCanvas);
             Controls.Add(OutputWindow);

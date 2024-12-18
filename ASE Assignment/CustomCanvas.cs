@@ -2,7 +2,6 @@
 using System.Windows.Forms;
 using BOOSE;
 
-///
 /// <summary>
 /// CustomCanvas provides a drawing surface using a PictureBox for output.
 /// It implements the ICanvas interface and supports drawing lines, shapes,
@@ -36,6 +35,11 @@ public class CustomCanvas : ICanvas
     private Color _penColour;
 
     /// <summary>
+    /// Default pen width.
+    /// </summary>
+    private float _penWidth = 5.0f; // Adjust this value as needed
+
+    /// <summary>
     /// The default width of the canvas.
     /// </summary>
     const int xsize = 640;
@@ -64,7 +68,7 @@ public class CustomCanvas : ICanvas
         set
         {
             _penColour = value;
-            _pen = new Pen(_penColour);
+            _pen = new Pen(_penColour, _penWidth);
         }
     }
 
@@ -84,10 +88,9 @@ public class CustomCanvas : ICanvas
     {
         _bitmap = new Bitmap(xsize, ysize);
         _graphics = Graphics.FromImage(_bitmap);
-        _pen = new Pen(Color.Black);
         Xpos = 0;
         Ypos = 0;
-        PenColour = Color.Black;
+        PenColour = Color.Black; // sets default pen color and width
     }
 
     /// <summary>
