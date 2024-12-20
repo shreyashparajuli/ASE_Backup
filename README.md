@@ -5,6 +5,7 @@ Fill in the fields below.
 ## Your Name Shreyash Parajuli
 ### Your Group
 ### Your Tutor
+	Resham Bahadur Pun
 
 Keep your progress up to date below. Put "DONE" after each section, when you have done it.
 
