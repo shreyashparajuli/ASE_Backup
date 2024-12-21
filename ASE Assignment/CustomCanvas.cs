@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Diagnostics;
+using System.Drawing;
 using System.Windows.Forms;
 using BOOSE;
 
@@ -158,8 +159,9 @@ public class CustomCanvas : ICanvas
     {
         Xpos = x;
         Ypos = y;
-        // No drawing done here, so no UpdateImage needed.
+        Debug.WriteLine($"MoveTo executed: New Position: ({Xpos}, {Ypos})");
     }
+
 
     /// <summary>
     /// Clears the canvas by filling it with white.
@@ -239,9 +241,30 @@ public class CustomCanvas : ICanvas
     /// <param name="text">The string of text to write.</param>
     public void WriteText(string text)
     {
-        _graphics.DrawString(text, SystemFonts.DefaultFont, Brushes.Black, Xpos, Ypos);
-        UpdateImage();
+        // Trim surrounding quotes from the input text
+        string trimmedText = text.Trim('"');
+
+        Debug.WriteLine($"WriteText called with trimmed text: {trimmedText}, Position: ({Xpos}, {Ypos})");
+
+        // Use the existing _graphics object to draw the text
+        if (_graphics != null)
+        {
+            // Create a brush with the current pen color
+            using (Brush brush = new SolidBrush(PenColour))
+            {
+                // Use a custom font and size for text rendering
+                Font font = new Font("Verdana", 14); // Changed font and size for uniqueness
+                _graphics.DrawString(trimmedText, font, brush, Xpos, Ypos);
+            }
+            UpdateImage(); // Refresh the PictureBox to show changes
+        }
+        else
+        {
+            Debug.WriteLine("Graphics object is null. Cannot render text.");
+        }
     }
+
+
 
     /// <summary>
     /// Returns the current bitmap of the canvas.
@@ -260,6 +283,9 @@ public class CustomCanvas : ICanvas
         if (_outputWindow != null)
         {
             _outputWindow.Image = _bitmap;
+            _outputWindow.Refresh(); // Force the PictureBox to redraw
+            Debug.WriteLine("OutputWindow updated.");
         }
     }
+
 }

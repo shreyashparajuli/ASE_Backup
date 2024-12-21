@@ -56,7 +56,7 @@
             // 
             // OutputWindow
             // 
-            OutputWindow.BackColor = SystemColors.ActiveBorder;
+            OutputWindow.BackColor = SystemColors.Window;
             OutputWindow.Location = new Point(215, 54);
             OutputWindow.Name = "OutputWindow";
             OutputWindow.Size = new Size(756, 421);

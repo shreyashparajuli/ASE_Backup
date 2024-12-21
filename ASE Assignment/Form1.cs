@@ -81,6 +81,7 @@ namespace ASE_Assignment
             }
         }
 
+
         /// <summary>
         /// Paint event for the output window. Draws the current bitmap from the canvas onto the PictureBox.
         /// </summary>
