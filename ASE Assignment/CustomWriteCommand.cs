@@ -1,5 +1,6 @@
 ﻿using BOOSE;
 
+
 namespace ASE_Assignment
 {
     internal class CustomWriteCommand : CommandOneParameter
@@ -9,7 +10,7 @@ namespace ASE_Assignment
             base.Execute();
             if (Canvas != null)
             {
-                base.Canvas.WriteText(Parameters[0]); 
+                base.Canvas.WriteText(base.Parameters[0]); 
             }
         }
 

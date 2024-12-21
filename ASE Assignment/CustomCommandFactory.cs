@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using BOOSE;
 
 namespace ASE_Assignment
@@ -7,14 +8,32 @@ namespace ASE_Assignment
     {
         public override ICommand MakeCommand(string commandType)
         {
+            
             commandType = commandType.ToLower().Trim();
 
-            if (commandType == "triangle")
-                return new CustomTriangleCommand();
-            if (commandType == "text")
-                return new CustomWriteCommand();
+            try
+            {
+               
+                if (commandType == "tri")
+                {
+                    return new CustomTriangleCommand();
+                }
 
-            return base.MakeCommand(commandType);
+                if (commandType == "write")
+                {
+                    return new CustomWriteCommand();
+                }
+
+                return base.MakeCommand(commandType);
+            }
+            catch (FactoryException ex)
+            {
+                
+                Debug.WriteLine($"FactoryException caught: {ex.Message}");
+                throw new FactoryException($"No such command '{commandType}'. " +
+                                           $"Please check the syntax.");
+            }
         }
     }
 }
+

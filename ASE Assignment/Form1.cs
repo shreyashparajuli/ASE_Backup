@@ -42,7 +42,7 @@ namespace ASE_Assignment
 
             // Initialize the canvas with a reference to the PictureBox (OutputWindow).
             myCanvas = new CustomCanvas(OutputWindow);
-            factory = new CommandFactory();
+            factory = new CustomCommandFactory();
             myProgram = new StoredProgram(myCanvas);
             parser = new Parser(factory, myProgram);
 
@@ -63,8 +63,8 @@ namespace ASE_Assignment
         {
             try
             {
-                string programtext = ProgramWindow.Text;
-                parser.ParseProgram(programtext);
+                string programText = ProgramWindow.Text;
+                parser.ParseProgram(programText);
                 myProgram.Run();
                 Refresh();
                 Debug.WriteLine("Program executed successfully!");
@@ -72,14 +72,22 @@ namespace ASE_Assignment
             catch (ParserException ex)
             {
                 Debug.WriteLine($"Parser Error: {ex.Message}");
-                MessageBox.Show($"Syntax Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Syntax Error: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (FactoryException fex)
+            {
+                // Here you handle the re-thrown exception
+                MessageBox.Show(fex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"Unexpected Error: {ex.Message}");
-                MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
         /// <summary>

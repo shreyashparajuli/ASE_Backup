@@ -8,12 +8,12 @@ namespace ASE_Assignment
         {
             base.Execute();
 
-            if (Paramsint.Length < 2 || Paramsint[0] <= 0 || Paramsint[1] <= 0)
+            if (base.Paramsint.Length < 2 || base.Paramsint[0] <= 0 || base.Paramsint[1] <= 0)
             {
-                throw new RestrictionException($"Invalid dimensions for triangle: {Paramsint[0]}, {Paramsint[1]}");
+                throw new RestrictionException($"Invalid dimensions for triangle: {base.Paramsint[0]}, {base.Paramsint[1]}");
             }
 
-            Canvas?.Tri(Paramsint[0], Paramsint[1]); 
+            base.Canvas.Tri(base.Paramsint[0], base.Paramsint[1]); 
         }
 
         public override void CheckParameters(string[] parameterList)
