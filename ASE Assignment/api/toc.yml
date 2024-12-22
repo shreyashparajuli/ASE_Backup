@@ -1,0 +1,23 @@
+### YamlMime:TableOfContent
+items:
+- uid: ASE_Assignment
+  name: ASE_Assignment
+  type: Namespace
+  items:
+  - uid: ASE_Assignment.CustomCanvas
+    name: CustomCanvas
+    type: Class
+  - uid: ASE_Assignment.CustomCommandFactory
+    name: CustomCommandFactory
+    type: Class
+  - uid: ASE_Assignment.Form1
+    name: Form1
+    type: Class
+- uid: AssignTests
+  name: AssignTests
+  type: Namespace
+  items:
+  - uid: AssignTests.Test1
+    name: Test1
+    type: Class
+memberLayout: SamePage

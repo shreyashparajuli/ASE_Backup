@@ -1,0 +1,506 @@
+### YamlMime:ManagedReference
+items:
+- uid: AssignTests.Test1
+  commentId: T:AssignTests.Test1
+  id: Test1
+  parent: AssignTests
+  children:
+  - AssignTests.Test1.DrawTo_ShouldUpdatePenPosition
+  - AssignTests.Test1.Moveto_ShouldUpdatePenPosition
+  - AssignTests.Test1.MultilineProgram_ShouldExecuteAllCommandsCorrectly
+  langs:
+  - csharp
+  - vb
+  name: Test1
+  nameWithType: Test1
+  fullName: AssignTests.Test1
+  type: Class
+  source:
+    remote:
+      path: AssignTests/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: Test1
+    path: ../AssignTests/Test1.cs
+    startLine: 10
+  assemblies:
+  - AssignTests
+  namespace: AssignTests
+  summary: >-
+    Contains unit tests for verifying core functionality of BOOSE drawing commands 
+
+    and their integration with the <xref href="ASE_Assignment.CustomCanvas" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public sealed class Test1
+    content.vb: >-
+      <TestClass>
+
+      Public NotInheritable Class Test1
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: AssignTests.Test1.Moveto_ShouldUpdatePenPosition
+  commentId: M:AssignTests.Test1.Moveto_ShouldUpdatePenPosition
+  id: Moveto_ShouldUpdatePenPosition
+  parent: AssignTests.Test1
+  langs:
+  - csharp
+  - vb
+  name: Moveto_ShouldUpdatePenPosition()
+  nameWithType: Test1.Moveto_ShouldUpdatePenPosition()
+  fullName: AssignTests.Test1.Moveto_ShouldUpdatePenPosition()
+  type: Method
+  source:
+    remote:
+      path: AssignTests/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: Moveto_ShouldUpdatePenPosition
+    path: ../AssignTests/Test1.cs
+    startLine: 17
+  assemblies:
+  - AssignTests
+  namespace: AssignTests
+  summary: >-
+    Verifies that calling <xref href="ASE_Assignment.CustomCanvas.MoveTo(System.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref> 
+
+    updates the pen position correctly.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Moveto_ShouldUpdatePenPosition()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Moveto_ShouldUpdatePenPosition()
+  overload: AssignTests.Test1.Moveto_ShouldUpdatePenPosition*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: AssignTests.Test1.DrawTo_ShouldUpdatePenPosition
+  commentId: M:AssignTests.Test1.DrawTo_ShouldUpdatePenPosition
+  id: DrawTo_ShouldUpdatePenPosition
+  parent: AssignTests.Test1
+  langs:
+  - csharp
+  - vb
+  name: DrawTo_ShouldUpdatePenPosition()
+  nameWithType: Test1.DrawTo_ShouldUpdatePenPosition()
+  fullName: AssignTests.Test1.DrawTo_ShouldUpdatePenPosition()
+  type: Method
+  source:
+    remote:
+      path: AssignTests/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: DrawTo_ShouldUpdatePenPosition
+    path: ../AssignTests/Test1.cs
+    startLine: 35
+  assemblies:
+  - AssignTests
+  namespace: AssignTests
+  summary: >-
+    Ensures that calling <xref href="ASE_Assignment.CustomCanvas.DrawTo(System.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref> 
+
+    updates the pen position after drawing a line.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void DrawTo_ShouldUpdatePenPosition()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub DrawTo_ShouldUpdatePenPosition()
+  overload: AssignTests.Test1.DrawTo_ShouldUpdatePenPosition*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: AssignTests.Test1.MultilineProgram_ShouldExecuteAllCommandsCorrectly
+  commentId: M:AssignTests.Test1.MultilineProgram_ShouldExecuteAllCommandsCorrectly
+  id: MultilineProgram_ShouldExecuteAllCommandsCorrectly
+  parent: AssignTests.Test1
+  langs:
+  - csharp
+  - vb
+  name: MultilineProgram_ShouldExecuteAllCommandsCorrectly()
+  nameWithType: Test1.MultilineProgram_ShouldExecuteAllCommandsCorrectly()
+  fullName: AssignTests.Test1.MultilineProgram_ShouldExecuteAllCommandsCorrectly()
+  type: Method
+  source:
+    remote:
+      path: AssignTests/Test1.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: MultilineProgram_ShouldExecuteAllCommandsCorrectly
+    path: ../AssignTests/Test1.cs
+    startLine: 54
+  assemblies:
+  - AssignTests
+  namespace: AssignTests
+  summary: >-
+    Tests a multiline script containing multiple commands to ensure 
+
+    that all commands are parsed and executed correctly in sequence.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void MultilineProgram_ShouldExecuteAllCommandsCorrectly()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub MultilineProgram_ShouldExecuteAllCommandsCorrectly()
+  overload: AssignTests.Test1.MultilineProgram_ShouldExecuteAllCommandsCorrectly*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment.CustomCanvas
+  commentId: T:ASE_Assignment.CustomCanvas
+  href: ASE_Assignment.CustomCanvas.html
+  name: CustomCanvas
+  nameWithType: CustomCanvas
+  fullName: ASE_Assignment.CustomCanvas
+- uid: AssignTests
+  commentId: N:AssignTests
+  href: AssignTests.html
+  name: AssignTests
+  nameWithType: AssignTests
+  fullName: AssignTests
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment.CustomCanvas.MoveTo(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.CustomCanvas.MoveTo(System.Int32,System.Int32)
+  isExternal: true
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_MoveTo_System_Int32_System_Int32_
+  name: MoveTo(int, int)
+  nameWithType: CustomCanvas.MoveTo(int, int)
+  fullName: ASE_Assignment.CustomCanvas.MoveTo(int, int)
+  nameWithType.vb: CustomCanvas.MoveTo(Integer, Integer)
+  fullName.vb: ASE_Assignment.CustomCanvas.MoveTo(Integer, Integer)
+  name.vb: MoveTo(Integer, Integer)
+  spec.csharp:
+  - uid: ASE_Assignment.CustomCanvas.MoveTo(System.Int32,System.Int32)
+    name: MoveTo
+    href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_MoveTo_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.CustomCanvas.MoveTo(System.Int32,System.Int32)
+    name: MoveTo
+    href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_MoveTo_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: AssignTests.Test1.Moveto_ShouldUpdatePenPosition*
+  commentId: Overload:AssignTests.Test1.Moveto_ShouldUpdatePenPosition
+  href: AssignTests.Test1.html#AssignTests_Test1_Moveto_ShouldUpdatePenPosition
+  name: Moveto_ShouldUpdatePenPosition
+  nameWithType: Test1.Moveto_ShouldUpdatePenPosition
+  fullName: AssignTests.Test1.Moveto_ShouldUpdatePenPosition
+- uid: ASE_Assignment.CustomCanvas.DrawTo(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.CustomCanvas.DrawTo(System.Int32,System.Int32)
+  isExternal: true
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_DrawTo_System_Int32_System_Int32_
+  name: DrawTo(int, int)
+  nameWithType: CustomCanvas.DrawTo(int, int)
+  fullName: ASE_Assignment.CustomCanvas.DrawTo(int, int)
+  nameWithType.vb: CustomCanvas.DrawTo(Integer, Integer)
+  fullName.vb: ASE_Assignment.CustomCanvas.DrawTo(Integer, Integer)
+  name.vb: DrawTo(Integer, Integer)
+  spec.csharp:
+  - uid: ASE_Assignment.CustomCanvas.DrawTo(System.Int32,System.Int32)
+    name: DrawTo
+    href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_DrawTo_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ASE_Assignment.CustomCanvas.DrawTo(System.Int32,System.Int32)
+    name: DrawTo
+    href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_DrawTo_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: AssignTests.Test1.DrawTo_ShouldUpdatePenPosition*
+  commentId: Overload:AssignTests.Test1.DrawTo_ShouldUpdatePenPosition
+  href: AssignTests.Test1.html#AssignTests_Test1_DrawTo_ShouldUpdatePenPosition
+  name: DrawTo_ShouldUpdatePenPosition
+  nameWithType: Test1.DrawTo_ShouldUpdatePenPosition
+  fullName: AssignTests.Test1.DrawTo_ShouldUpdatePenPosition
+- uid: AssignTests.Test1.MultilineProgram_ShouldExecuteAllCommandsCorrectly*
+  commentId: Overload:AssignTests.Test1.MultilineProgram_ShouldExecuteAllCommandsCorrectly
+  href: AssignTests.Test1.html#AssignTests_Test1_MultilineProgram_ShouldExecuteAllCommandsCorrectly
+  name: MultilineProgram_ShouldExecuteAllCommandsCorrectly
+  nameWithType: Test1.MultilineProgram_ShouldExecuteAllCommandsCorrectly
+  fullName: AssignTests.Test1.MultilineProgram_ShouldExecuteAllCommandsCorrectly

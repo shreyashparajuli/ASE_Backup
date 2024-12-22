@@ -15,25 +15,26 @@ namespace ASE_Assignment
         /// <summary>
         /// Interface to the canvas object used for drawing.
         /// </summary>
-        ICanvas myCanvas;
+        private ICanvas myCanvas;
 
         /// <summary>
         /// A factory to create command objects based on parsed instructions.
         /// </summary>
-        CommandFactory factory;
+        private CommandFactory factory;
 
         /// <summary>
         /// A container to store and run the parsed program commands.
         /// </summary>
-        StoredProgram myProgram;
+        private StoredProgram myProgram;
 
         /// <summary>
         /// Parses BOOSE script input into executable commands.
         /// </summary>
-        Parser parser;
+        private Parser parser;
 
         /// <summary>
-        /// Initializes the form and sets up the canvas, parser, and events.
+        /// Initializes the form, sets up the canvas and parser, 
+        /// and attaches necessary event handlers.
         /// </summary>
         public Form1()
         {
@@ -46,7 +47,7 @@ namespace ASE_Assignment
             myProgram = new StoredProgram(myCanvas);
             parser = new Parser(factory, myProgram);
 
-            // Attach the TextChanged event for real-time syntax checking
+            // Attach the TextChanged event for real-time syntax checking.
             ProgramWindow.TextChanged += ProgramWindow_TextChanged;
 
             // Attach event handlers for clear and save buttons if they are present.
@@ -59,6 +60,8 @@ namespace ASE_Assignment
         /// Attempts to parse and execute the user-entered BOOSE script.
         /// Displays errors if the parsing or execution fails.
         /// </summary>
+        /// <param name="sender">The source of the Run button click.</param>
+        /// <param name="e">Additional event data.</param>
         private void Run_Click(object sender, EventArgs e)
         {
             try
@@ -77,7 +80,7 @@ namespace ASE_Assignment
             }
             catch (FactoryException fex)
             {
-                // Here you handle the re-thrown exception
+                // Re-throws factory-specific exceptions.
                 MessageBox.Show(fex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
@@ -88,11 +91,12 @@ namespace ASE_Assignment
             }
         }
 
-
-
         /// <summary>
-        /// Paint event for the output window. Draws the current bitmap from the canvas onto the PictureBox.
+        /// Paint event for the output window. 
+        /// Draws the current bitmap from the canvas onto the PictureBox.
         /// </summary>
+        /// <param name="sender">The source of the Paint event.</param>
+        /// <param name="e">Paint event data containing the Graphics object.</param>
         private void OutputWindow_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
@@ -104,9 +108,12 @@ namespace ASE_Assignment
         /// Real-time syntax validation as the user types. 
         /// Avoids parsing if the input is too short to form a valid command.
         /// </summary>
+        /// <param name="sender">The source of the TextChanged event.</param>
+        /// <param name="e">Additional event data.</param>
         private void ProgramWindow_TextChanged(object sender, EventArgs e)
         {
             string text = ProgramWindow.Text;
+
             // If input is too short, do not attempt parsing.
             if (text.Trim().Length < 2)
             {
@@ -115,12 +122,13 @@ namespace ASE_Assignment
                 return;
             }
 
-            // If you want to enable real-time parsing again, uncomment the following and handle errors:
+            // Uncomment to enable real-time parsing again, if desired:
             // TryParseProgram(text);
         }
 
         /// <summary>
-        /// Attempts to parse the given program text and update the background color based on success or failure.
+        /// Attempts to parse the given program text and update the background 
+        /// color based on success or failure.
         /// </summary>
         /// <param name="programText">The BOOSE script to parse.</param>
         private void TryParseProgram(string programText)
@@ -139,21 +147,21 @@ namespace ASE_Assignment
         /// <summary>
         /// Clears the canvas when the Clear button is clicked.
         /// </summary>
+        /// <param name="sender">The source of the Click event.</param>
+        /// <param name="e">Additional event data.</param>
         private void btnClearCanvas_Click(object sender, EventArgs e)
         {
             // Clear the canvas
             myCanvas.Clear();
-
-
-
             Refresh();
         }
-
 
         /// <summary>
         /// Saves the current canvas image as a file when the Save button is clicked.
         /// Opens a SaveFileDialog to specify the file location and format.
         /// </summary>
+        /// <param name="sender">The source of the Click event.</param>
+        /// <param name="e">Additional event data.</param>
         private void btnSaveCanvas_Click(object sender, EventArgs e)
         {
             using (SaveFileDialog sfd = new SaveFileDialog())

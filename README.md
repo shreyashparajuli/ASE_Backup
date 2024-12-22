@@ -4,6 +4,7 @@ Fill in the fields below.
 
 ## Your Name Shreyash Parajuli
 ### Your Group
+	A
 ### Your Tutor
 	Resham Bahadur Pun
 
@@ -24,7 +25,7 @@ Keep your progress up to date below. Put "DONE" after each section, when you hav
 	Fully documented with XML comments and Documentation web site produced 
 	Partially done
 #### 4 Exception Handling (1) 5 marks*
-	DONE
+	Partially Done
 #### 5 Library (DLL) installed and working with reasonable user interface (2) 10 marks
 	Form interface with program window, output window and run button
 	BOOSE DLL library installed 
@@ -34,7 +35,7 @@ Keep your progress up to date below. Put "DONE" after each section, when you hav
 #### 6 Basic drawing commands of the library are implemented (2) 10 marks
 	Moveto, circle, rect, pencolour, write.
 	Unrestricted drawing programs can be run (1unrestrictedDrawing.boose)
-	Partially done
+	DONE
 
 ### Tutor's Feedback
 

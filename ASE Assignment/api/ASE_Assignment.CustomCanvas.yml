@@ -1,0 +1,1583 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment.CustomCanvas
+  commentId: T:ASE_Assignment.CustomCanvas
+  id: CustomCanvas
+  parent: ASE_Assignment
+  children:
+  - ASE_Assignment.CustomCanvas.#ctor
+  - ASE_Assignment.CustomCanvas.#ctor(System.Windows.Forms.PictureBox)
+  - ASE_Assignment.CustomCanvas.Circle(System.Int32,System.Boolean)
+  - ASE_Assignment.CustomCanvas.Clear
+  - ASE_Assignment.CustomCanvas.DrawTo(System.Int32,System.Int32)
+  - ASE_Assignment.CustomCanvas.MoveTo(System.Int32,System.Int32)
+  - ASE_Assignment.CustomCanvas.PenColour
+  - ASE_Assignment.CustomCanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  - ASE_Assignment.CustomCanvas.Reset
+  - ASE_Assignment.CustomCanvas.Set(System.Int32,System.Int32)
+  - ASE_Assignment.CustomCanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  - ASE_Assignment.CustomCanvas.Tri(System.Int32,System.Int32)
+  - ASE_Assignment.CustomCanvas.WriteText(System.String)
+  - ASE_Assignment.CustomCanvas.Xpos
+  - ASE_Assignment.CustomCanvas.Ypos
+  - ASE_Assignment.CustomCanvas.getBitmap
+  langs:
+  - csharp
+  - vb
+  name: CustomCanvas
+  nameWithType: CustomCanvas
+  fullName: ASE_Assignment.CustomCanvas
+  type: Class
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: CustomCanvas
+    path: CustomCanvas.cs
+    startLine: 12
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: >-
+    CustomCanvas provides a drawing surface using a PictureBox for output.
+
+    It implements the <xref href="BOOSE.ICanvas" data-throw-if-not-resolved="false"></xref> interface and supports drawing lines, shapes,
+
+    and text, as well as changing the pen color and clearing the canvas.
+  example: []
+  syntax:
+    content: 'public class CustomCanvas : ICanvas'
+    content.vb: Public Class CustomCanvas Implements ICanvas
+  inheritance:
+  - System.Object
+  implements:
+  - BOOSE.ICanvas
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ASE_Assignment.CustomCanvas.Xpos
+  commentId: P:ASE_Assignment.CustomCanvas.Xpos
+  id: Xpos
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: Xpos
+  nameWithType: CustomCanvas.Xpos
+  fullName: ASE_Assignment.CustomCanvas.Xpos
+  type: Property
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: Xpos
+    path: CustomCanvas.cs
+    startLine: 57
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: The current X position used for drawing references.
+  example: []
+  syntax:
+    content: public int Xpos { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Xpos As Integer
+  overload: ASE_Assignment.CustomCanvas.Xpos*
+  implements:
+  - BOOSE.ICanvas.Xpos
+- uid: ASE_Assignment.CustomCanvas.Ypos
+  commentId: P:ASE_Assignment.CustomCanvas.Ypos
+  id: Ypos
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: Ypos
+  nameWithType: CustomCanvas.Ypos
+  fullName: ASE_Assignment.CustomCanvas.Ypos
+  type: Property
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: Ypos
+    path: CustomCanvas.cs
+    startLine: 62
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: The current Y position used for drawing references.
+  example: []
+  syntax:
+    content: public int Ypos { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Ypos As Integer
+  overload: ASE_Assignment.CustomCanvas.Ypos*
+  implements:
+  - BOOSE.ICanvas.Ypos
+- uid: ASE_Assignment.CustomCanvas.PenColour
+  commentId: P:ASE_Assignment.CustomCanvas.PenColour
+  id: PenColour
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: PenColour
+  nameWithType: CustomCanvas.PenColour
+  fullName: ASE_Assignment.CustomCanvas.PenColour
+  type: Property
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: PenColour
+    path: CustomCanvas.cs
+    startLine: 67
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: The current pen color used for drawing.
+  example: []
+  syntax:
+    content: public Color PenColour { get; set; }
+    parameters: []
+    return:
+      type: System.Drawing.Color
+    content.vb: Public Property PenColour As Color
+  overload: ASE_Assignment.CustomCanvas.PenColour*
+- uid: ASE_Assignment.CustomCanvas.#ctor
+  commentId: M:ASE_Assignment.CustomCanvas.#ctor
+  id: '#ctor'
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: CustomCanvas()
+  nameWithType: CustomCanvas.CustomCanvas()
+  fullName: ASE_Assignment.CustomCanvas.CustomCanvas()
+  type: Constructor
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: .ctor
+    path: CustomCanvas.cs
+    startLine: 91
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: >-
+    Parameterless constructor that initializes the canvas with a default size 
+
+    (<xref href="ASE_Assignment.CustomCanvas.xsize" data-throw-if-not-resolved="false"></xref> by <xref href="ASE_Assignment.CustomCanvas.ysize" data-throw-if-not-resolved="false"></xref>) and a white background.
+  example: []
+  syntax:
+    content: public CustomCanvas()
+    content.vb: Public Sub New()
+  overload: ASE_Assignment.CustomCanvas.#ctor*
+  nameWithType.vb: CustomCanvas.New()
+  fullName.vb: ASE_Assignment.CustomCanvas.New()
+  name.vb: New()
+- uid: ASE_Assignment.CustomCanvas.#ctor(System.Windows.Forms.PictureBox)
+  commentId: M:ASE_Assignment.CustomCanvas.#ctor(System.Windows.Forms.PictureBox)
+  id: '#ctor(System.Windows.Forms.PictureBox)'
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: CustomCanvas(PictureBox)
+  nameWithType: CustomCanvas.CustomCanvas(PictureBox)
+  fullName: ASE_Assignment.CustomCanvas.CustomCanvas(System.Windows.Forms.PictureBox)
+  type: Constructor
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: .ctor
+    path: CustomCanvas.cs
+    startLine: 105
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: >-
+    Constructor that initializes the canvas to match a given PictureBox's size,
+
+    then sets the default pen color and position.
+  example: []
+  syntax:
+    content: public CustomCanvas(PictureBox outputWindow)
+    parameters:
+    - id: outputWindow
+      type: System.Windows.Forms.PictureBox
+      description: The PictureBox used for displaying the canvas.
+    content.vb: Public Sub New(outputWindow As PictureBox)
+  overload: ASE_Assignment.CustomCanvas.#ctor*
+  nameWithType.vb: CustomCanvas.New(PictureBox)
+  fullName.vb: ASE_Assignment.CustomCanvas.New(System.Windows.Forms.PictureBox)
+  name.vb: New(PictureBox)
+- uid: ASE_Assignment.CustomCanvas.Set(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.CustomCanvas.Set(System.Int32,System.Int32)
+  id: Set(System.Int32,System.Int32)
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: Set(int, int)
+  nameWithType: CustomCanvas.Set(int, int)
+  fullName: ASE_Assignment.CustomCanvas.Set(int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: Set
+    path: CustomCanvas.cs
+    startLine: 121
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: Sets the current drawing position without drawing a line.
+  example: []
+  syntax:
+    content: public void Set(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The X coordinate to move to.
+    - id: y
+      type: System.Int32
+      description: The Y coordinate to move to.
+    content.vb: Public Sub [Set](x As Integer, y As Integer)
+  overload: ASE_Assignment.CustomCanvas.Set*
+  implements:
+  - BOOSE.ICanvas.Set(System.Int32,System.Int32)
+  nameWithType.vb: CustomCanvas.Set(Integer, Integer)
+  fullName.vb: ASE_Assignment.CustomCanvas.Set(Integer, Integer)
+  name.vb: Set(Integer, Integer)
+- uid: ASE_Assignment.CustomCanvas.DrawTo(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.CustomCanvas.DrawTo(System.Int32,System.Int32)
+  id: DrawTo(System.Int32,System.Int32)
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: DrawTo(int, int)
+  nameWithType: CustomCanvas.DrawTo(int, int)
+  fullName: ASE_Assignment.CustomCanvas.DrawTo(int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: DrawTo
+    path: CustomCanvas.cs
+    startLine: 135
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: >-
+    Draws a line from the current position to the specified (x, y) coordinates,
+
+    then updates the current position to that point.
+  example: []
+  syntax:
+    content: public void DrawTo(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: The X coordinate to draw to.
+    - id: y
+      type: System.Int32
+      description: The Y coordinate to draw to.
+    content.vb: Public Sub DrawTo(x As Integer, y As Integer)
+  overload: ASE_Assignment.CustomCanvas.DrawTo*
+  exceptions:
+  - type: BOOSE.CanvasException
+    commentId: T:BOOSE.CanvasException
+    description: Thrown if the coordinates are out of valid range.
+  implements:
+  - BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
+  nameWithType.vb: CustomCanvas.DrawTo(Integer, Integer)
+  fullName.vb: ASE_Assignment.CustomCanvas.DrawTo(Integer, Integer)
+  name.vb: DrawTo(Integer, Integer)
+- uid: ASE_Assignment.CustomCanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.CustomCanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  id: SetColour(System.Int32,System.Int32,System.Int32)
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: SetColour(int, int, int)
+  nameWithType: CustomCanvas.SetColour(int, int, int)
+  fullName: ASE_Assignment.CustomCanvas.SetColour(int, int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: SetColour
+    path: CustomCanvas.cs
+    startLine: 152
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: Sets the pen color using RGB values.
+  example: []
+  syntax:
+    content: public void SetColour(int r, int g, int b)
+    parameters:
+    - id: r
+      type: System.Int32
+      description: Red component (0-255).
+    - id: g
+      type: System.Int32
+      description: Green component (0-255).
+    - id: b
+      type: System.Int32
+      description: Blue component (0-255).
+    content.vb: Public Sub SetColour(r As Integer, g As Integer, b As Integer)
+  overload: ASE_Assignment.CustomCanvas.SetColour*
+  implements:
+  - BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  nameWithType.vb: CustomCanvas.SetColour(Integer, Integer, Integer)
+  fullName.vb: ASE_Assignment.CustomCanvas.SetColour(Integer, Integer, Integer)
+  name.vb: SetColour(Integer, Integer, Integer)
+- uid: ASE_Assignment.CustomCanvas.MoveTo(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.CustomCanvas.MoveTo(System.Int32,System.Int32)
+  id: MoveTo(System.Int32,System.Int32)
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: MoveTo(int, int)
+  nameWithType: CustomCanvas.MoveTo(int, int)
+  fullName: ASE_Assignment.CustomCanvas.MoveTo(int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: MoveTo
+    path: CustomCanvas.cs
+    startLine: 164
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: >-
+    Moves the current position to the specified coordinates without drawing.
+
+    Logs the new position to the Debug console.
+  example: []
+  syntax:
+    content: public void MoveTo(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+      description: X coordinate to move to.
+    - id: y
+      type: System.Int32
+      description: Y coordinate to move to.
+    content.vb: Public Sub MoveTo(x As Integer, y As Integer)
+  overload: ASE_Assignment.CustomCanvas.MoveTo*
+  implements:
+  - BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
+  nameWithType.vb: CustomCanvas.MoveTo(Integer, Integer)
+  fullName.vb: ASE_Assignment.CustomCanvas.MoveTo(Integer, Integer)
+  name.vb: MoveTo(Integer, Integer)
+- uid: ASE_Assignment.CustomCanvas.Clear
+  commentId: M:ASE_Assignment.CustomCanvas.Clear
+  id: Clear
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: CustomCanvas.Clear()
+  fullName: ASE_Assignment.CustomCanvas.Clear()
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: Clear
+    path: CustomCanvas.cs
+    startLine: 174
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: Clears the entire canvas by filling it with white.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: ASE_Assignment.CustomCanvas.Clear*
+  implements:
+  - BOOSE.ICanvas.Clear
+- uid: ASE_Assignment.CustomCanvas.Reset
+  commentId: M:ASE_Assignment.CustomCanvas.Reset
+  id: Reset
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: CustomCanvas.Reset()
+  fullName: ASE_Assignment.CustomCanvas.Reset()
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: Reset
+    path: CustomCanvas.cs
+    startLine: 185
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: Resets the canvas state by clearing it and setting the position to (0,0).
+  example: []
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset()
+  overload: ASE_Assignment.CustomCanvas.Reset*
+  implements:
+  - BOOSE.ICanvas.Reset
+- uid: ASE_Assignment.CustomCanvas.Circle(System.Int32,System.Boolean)
+  commentId: M:ASE_Assignment.CustomCanvas.Circle(System.Int32,System.Boolean)
+  id: Circle(System.Int32,System.Boolean)
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: Circle(int, bool)
+  nameWithType: CustomCanvas.Circle(int, bool)
+  fullName: ASE_Assignment.CustomCanvas.Circle(int, bool)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: Circle
+    path: CustomCanvas.cs
+    startLine: 198
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: >-
+    Draws a circle at the current position with the specified radius.
+
+    Optionally fills the circle instead of drawing only an outline.
+  example: []
+  syntax:
+    content: public void Circle(int radius, bool fill)
+    parameters:
+    - id: radius
+      type: System.Int32
+      description: The radius of the circle.
+    - id: fill
+      type: System.Boolean
+      description: Whether to fill the circle (true) or only draw an outline (false).
+    content.vb: Public Sub Circle(radius As Integer, fill As Boolean)
+  overload: ASE_Assignment.CustomCanvas.Circle*
+  implements:
+  - BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
+  nameWithType.vb: CustomCanvas.Circle(Integer, Boolean)
+  fullName.vb: ASE_Assignment.CustomCanvas.Circle(Integer, Boolean)
+  name.vb: Circle(Integer, Boolean)
+- uid: ASE_Assignment.CustomCanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  commentId: M:ASE_Assignment.CustomCanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  id: Rect(System.Int32,System.Int32,System.Boolean)
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: Rect(int, int, bool)
+  nameWithType: CustomCanvas.Rect(int, int, bool)
+  fullName: ASE_Assignment.CustomCanvas.Rect(int, int, bool)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: Rect
+    path: CustomCanvas.cs
+    startLine: 223
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: >-
+    Draws a rectangle at the current position with the specified width and height.
+
+    Optionally fills the rectangle instead of drawing only an outline.
+  example: []
+  syntax:
+    content: public void Rect(int width, int height, bool fill)
+    parameters:
+    - id: width
+      type: System.Int32
+      description: The width of the rectangle.
+    - id: height
+      type: System.Int32
+      description: The height of the rectangle.
+    - id: fill
+      type: System.Boolean
+      description: True to fill the rectangle, false to draw only an outline.
+    content.vb: Public Sub Rect(width As Integer, height As Integer, fill As Boolean)
+  overload: ASE_Assignment.CustomCanvas.Rect*
+  implements:
+  - BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  nameWithType.vb: CustomCanvas.Rect(Integer, Integer, Boolean)
+  fullName.vb: ASE_Assignment.CustomCanvas.Rect(Integer, Integer, Boolean)
+  name.vb: Rect(Integer, Integer, Boolean)
+- uid: ASE_Assignment.CustomCanvas.Tri(System.Int32,System.Int32)
+  commentId: M:ASE_Assignment.CustomCanvas.Tri(System.Int32,System.Int32)
+  id: Tri(System.Int32,System.Int32)
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: Tri(int, int)
+  nameWithType: CustomCanvas.Tri(int, int)
+  fullName: ASE_Assignment.CustomCanvas.Tri(int, int)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: Tri
+    path: CustomCanvas.cs
+    startLine: 247
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: >-
+    Draws a triangle at the current position, given a width (base) and height.
+
+    The triangle is drawn as an outline connecting three points and returning to the initial point.
+  example: []
+  syntax:
+    content: public void Tri(int width, int height)
+    parameters:
+    - id: width
+      type: System.Int32
+      description: The width of the triangle's base.
+    - id: height
+      type: System.Int32
+      description: The height of the triangle.
+    content.vb: Public Sub Tri(width As Integer, height As Integer)
+  overload: ASE_Assignment.CustomCanvas.Tri*
+  implements:
+  - BOOSE.ICanvas.Tri(System.Int32,System.Int32)
+  nameWithType.vb: CustomCanvas.Tri(Integer, Integer)
+  fullName.vb: ASE_Assignment.CustomCanvas.Tri(Integer, Integer)
+  name.vb: Tri(Integer, Integer)
+- uid: ASE_Assignment.CustomCanvas.WriteText(System.String)
+  commentId: M:ASE_Assignment.CustomCanvas.WriteText(System.String)
+  id: WriteText(System.String)
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: WriteText(string)
+  nameWithType: CustomCanvas.WriteText(string)
+  fullName: ASE_Assignment.CustomCanvas.WriteText(string)
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: WriteText
+    path: CustomCanvas.cs
+    startLine: 265
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: >-
+    Writes text at the current position on the canvas. 
+
+    Automatically strips any surrounding quotation marks from the text.
+  example: []
+  syntax:
+    content: public void WriteText(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The string of text to be rendered.
+    content.vb: Public Sub WriteText(text As String)
+  overload: ASE_Assignment.CustomCanvas.WriteText*
+  implements:
+  - BOOSE.ICanvas.WriteText(System.String)
+  nameWithType.vb: CustomCanvas.WriteText(String)
+  fullName.vb: ASE_Assignment.CustomCanvas.WriteText(String)
+  name.vb: WriteText(String)
+- uid: ASE_Assignment.CustomCanvas.getBitmap
+  commentId: M:ASE_Assignment.CustomCanvas.getBitmap
+  id: getBitmap
+  parent: ASE_Assignment.CustomCanvas
+  langs:
+  - csharp
+  - vb
+  name: getBitmap()
+  nameWithType: CustomCanvas.getBitmap()
+  fullName: ASE_Assignment.CustomCanvas.getBitmap()
+  type: Method
+  source:
+    remote:
+      path: ASE Assignment/CustomCanvas.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-shreyashparajuli.git
+    id: getBitmap
+    path: CustomCanvas.cs
+    startLine: 292
+  assemblies:
+  - ASE_Assignment
+  namespace: ASE_Assignment
+  summary: Returns the current Bitmap of the canvas drawing surface.
+  example: []
+  syntax:
+    content: public object getBitmap()
+    return:
+      type: System.Object
+      description: The current <xref href="System.Drawing.Bitmap" data-throw-if-not-resolved="false"></xref> that represents the canvas.
+    content.vb: Public Function getBitmap() As Object
+  overload: ASE_Assignment.CustomCanvas.getBitmap*
+  implements:
+  - BOOSE.ICanvas.getBitmap
+references:
+- uid: BOOSE.ICanvas
+  commentId: T:BOOSE.ICanvas
+  parent: BOOSE
+  isExternal: true
+  name: ICanvas
+  nameWithType: ICanvas
+  fullName: BOOSE.ICanvas
+- uid: ASE_Assignment
+  commentId: N:ASE_Assignment
+  href: ASE_Assignment.html
+  name: ASE_Assignment
+  nameWithType: ASE_Assignment
+  fullName: ASE_Assignment
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment.CustomCanvas.Xpos*
+  commentId: Overload:ASE_Assignment.CustomCanvas.Xpos
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_Xpos
+  name: Xpos
+  nameWithType: CustomCanvas.Xpos
+  fullName: ASE_Assignment.CustomCanvas.Xpos
+- uid: BOOSE.ICanvas.Xpos
+  commentId: P:BOOSE.ICanvas.Xpos
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: Xpos
+  nameWithType: ICanvas.Xpos
+  fullName: BOOSE.ICanvas.Xpos
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ASE_Assignment.CustomCanvas.Ypos*
+  commentId: Overload:ASE_Assignment.CustomCanvas.Ypos
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_Ypos
+  name: Ypos
+  nameWithType: CustomCanvas.Ypos
+  fullName: ASE_Assignment.CustomCanvas.Ypos
+- uid: BOOSE.ICanvas.Ypos
+  commentId: P:BOOSE.ICanvas.Ypos
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: Ypos
+  nameWithType: ICanvas.Ypos
+  fullName: BOOSE.ICanvas.Ypos
+- uid: ASE_Assignment.CustomCanvas.PenColour*
+  commentId: Overload:ASE_Assignment.CustomCanvas.PenColour
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_PenColour
+  name: PenColour
+  nameWithType: CustomCanvas.PenColour
+  fullName: ASE_Assignment.CustomCanvas.PenColour
+- uid: System.Drawing.Color
+  commentId: T:System.Drawing.Color
+  parent: System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.color
+  name: Color
+  nameWithType: Color
+  fullName: System.Drawing.Color
+- uid: System.Drawing
+  commentId: N:System.Drawing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Drawing
+  nameWithType: System.Drawing
+  fullName: System.Drawing
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Drawing
+    name: Drawing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.drawing
+- uid: ASE_Assignment.CustomCanvas.xsize
+  commentId: F:ASE_Assignment.CustomCanvas.xsize
+  name: xsize
+  nameWithType: CustomCanvas.xsize
+  fullName: ASE_Assignment.CustomCanvas.xsize
+- uid: ASE_Assignment.CustomCanvas.ysize
+  commentId: F:ASE_Assignment.CustomCanvas.ysize
+  name: ysize
+  nameWithType: CustomCanvas.ysize
+  fullName: ASE_Assignment.CustomCanvas.ysize
+- uid: ASE_Assignment.CustomCanvas.#ctor*
+  commentId: Overload:ASE_Assignment.CustomCanvas.#ctor
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas__ctor
+  name: CustomCanvas
+  nameWithType: CustomCanvas.CustomCanvas
+  fullName: ASE_Assignment.CustomCanvas.CustomCanvas
+  nameWithType.vb: CustomCanvas.New
+  fullName.vb: ASE_Assignment.CustomCanvas.New
+  name.vb: New
+- uid: System.Windows.Forms.PictureBox
+  commentId: T:System.Windows.Forms.PictureBox
+  parent: System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.forms.picturebox
+  name: PictureBox
+  nameWithType: PictureBox
+  fullName: System.Windows.Forms.PictureBox
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Forms
+    name: Forms
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.forms
+- uid: ASE_Assignment.CustomCanvas.Set*
+  commentId: Overload:ASE_Assignment.CustomCanvas.Set
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_Set_System_Int32_System_Int32_
+  name: Set
+  nameWithType: CustomCanvas.Set
+  fullName: ASE_Assignment.CustomCanvas.Set
+- uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
+  commentId: M:BOOSE.ICanvas.Set(System.Int32,System.Int32)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Set(int, int)
+  nameWithType: ICanvas.Set(int, int)
+  fullName: BOOSE.ICanvas.Set(int, int)
+  nameWithType.vb: ICanvas.Set(Integer, Integer)
+  fullName.vb: BOOSE.ICanvas.Set(Integer, Integer)
+  name.vb: Set(Integer, Integer)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Set(System.Int32,System.Int32)
+    name: Set
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: BOOSE.CanvasException
+  commentId: T:BOOSE.CanvasException
+  isExternal: true
+  name: CanvasException
+  nameWithType: CanvasException
+  fullName: BOOSE.CanvasException
+- uid: ASE_Assignment.CustomCanvas.DrawTo*
+  commentId: Overload:ASE_Assignment.CustomCanvas.DrawTo
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_DrawTo_System_Int32_System_Int32_
+  name: DrawTo
+  nameWithType: CustomCanvas.DrawTo
+  fullName: ASE_Assignment.CustomCanvas.DrawTo
+- uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
+  commentId: M:BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: DrawTo(int, int)
+  nameWithType: ICanvas.DrawTo(int, int)
+  fullName: BOOSE.ICanvas.DrawTo(int, int)
+  nameWithType.vb: ICanvas.DrawTo(Integer, Integer)
+  fullName.vb: BOOSE.ICanvas.DrawTo(Integer, Integer)
+  name.vb: DrawTo(Integer, Integer)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
+    name: DrawTo
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.DrawTo(System.Int32,System.Int32)
+    name: DrawTo
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.CustomCanvas.SetColour*
+  commentId: Overload:ASE_Assignment.CustomCanvas.SetColour
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_SetColour_System_Int32_System_Int32_System_Int32_
+  name: SetColour
+  nameWithType: CustomCanvas.SetColour
+  fullName: ASE_Assignment.CustomCanvas.SetColour
+- uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  commentId: M:BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: SetColour(int, int, int)
+  nameWithType: ICanvas.SetColour(int, int, int)
+  fullName: BOOSE.ICanvas.SetColour(int, int, int)
+  nameWithType.vb: ICanvas.SetColour(Integer, Integer, Integer)
+  fullName.vb: BOOSE.ICanvas.SetColour(Integer, Integer, Integer)
+  name.vb: SetColour(Integer, Integer, Integer)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
+    name: SetColour
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.SetColour(System.Int32,System.Int32,System.Int32)
+    name: SetColour
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.CustomCanvas.MoveTo*
+  commentId: Overload:ASE_Assignment.CustomCanvas.MoveTo
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_MoveTo_System_Int32_System_Int32_
+  name: MoveTo
+  nameWithType: CustomCanvas.MoveTo
+  fullName: ASE_Assignment.CustomCanvas.MoveTo
+- uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
+  commentId: M:BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: MoveTo(int, int)
+  nameWithType: ICanvas.MoveTo(int, int)
+  fullName: BOOSE.ICanvas.MoveTo(int, int)
+  nameWithType.vb: ICanvas.MoveTo(Integer, Integer)
+  fullName.vb: BOOSE.ICanvas.MoveTo(Integer, Integer)
+  name.vb: MoveTo(Integer, Integer)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
+    name: MoveTo
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.MoveTo(System.Int32,System.Int32)
+    name: MoveTo
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.CustomCanvas.Clear*
+  commentId: Overload:ASE_Assignment.CustomCanvas.Clear
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_Clear
+  name: Clear
+  nameWithType: CustomCanvas.Clear
+  fullName: ASE_Assignment.CustomCanvas.Clear
+- uid: BOOSE.ICanvas.Clear
+  commentId: M:BOOSE.ICanvas.Clear
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: Clear()
+  nameWithType: ICanvas.Clear()
+  fullName: BOOSE.ICanvas.Clear()
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Clear
+    name: Clear
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Clear
+    name: Clear
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ASE_Assignment.CustomCanvas.Reset*
+  commentId: Overload:ASE_Assignment.CustomCanvas.Reset
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_Reset
+  name: Reset
+  nameWithType: CustomCanvas.Reset
+  fullName: ASE_Assignment.CustomCanvas.Reset
+- uid: BOOSE.ICanvas.Reset
+  commentId: M:BOOSE.ICanvas.Reset
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: Reset()
+  nameWithType: ICanvas.Reset()
+  fullName: BOOSE.ICanvas.Reset()
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Reset
+    name: Reset
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Reset
+    name: Reset
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ASE_Assignment.CustomCanvas.Circle*
+  commentId: Overload:ASE_Assignment.CustomCanvas.Circle
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_Circle_System_Int32_System_Boolean_
+  name: Circle
+  nameWithType: CustomCanvas.Circle
+  fullName: ASE_Assignment.CustomCanvas.Circle
+- uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
+  commentId: M:BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Circle(int, bool)
+  nameWithType: ICanvas.Circle(int, bool)
+  fullName: BOOSE.ICanvas.Circle(int, bool)
+  nameWithType.vb: ICanvas.Circle(Integer, Boolean)
+  fullName.vb: BOOSE.ICanvas.Circle(Integer, Boolean)
+  name.vb: Circle(Integer, Boolean)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
+    name: Circle
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Circle(System.Int32,System.Boolean)
+    name: Circle
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ASE_Assignment.CustomCanvas.Rect*
+  commentId: Overload:ASE_Assignment.CustomCanvas.Rect
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_Rect_System_Int32_System_Int32_System_Boolean_
+  name: Rect
+  nameWithType: CustomCanvas.Rect
+  fullName: ASE_Assignment.CustomCanvas.Rect
+- uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  commentId: M:BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Rect(int, int, bool)
+  nameWithType: ICanvas.Rect(int, int, bool)
+  fullName: BOOSE.ICanvas.Rect(int, int, bool)
+  nameWithType.vb: ICanvas.Rect(Integer, Integer, Boolean)
+  fullName.vb: BOOSE.ICanvas.Rect(Integer, Integer, Boolean)
+  name.vb: Rect(Integer, Integer, Boolean)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
+    name: Rect
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Rect(System.Int32,System.Int32,System.Boolean)
+    name: Rect
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ASE_Assignment.CustomCanvas.Tri*
+  commentId: Overload:ASE_Assignment.CustomCanvas.Tri
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_Tri_System_Int32_System_Int32_
+  name: Tri
+  nameWithType: CustomCanvas.Tri
+  fullName: ASE_Assignment.CustomCanvas.Tri
+- uid: BOOSE.ICanvas.Tri(System.Int32,System.Int32)
+  commentId: M:BOOSE.ICanvas.Tri(System.Int32,System.Int32)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: Tri(int, int)
+  nameWithType: ICanvas.Tri(int, int)
+  fullName: BOOSE.ICanvas.Tri(int, int)
+  nameWithType.vb: ICanvas.Tri(Integer, Integer)
+  fullName.vb: BOOSE.ICanvas.Tri(Integer, Integer)
+  name.vb: Tri(Integer, Integer)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.Tri(System.Int32,System.Int32)
+    name: Tri
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.Tri(System.Int32,System.Int32)
+    name: Tri
+    isExternal: true
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ASE_Assignment.CustomCanvas.WriteText*
+  commentId: Overload:ASE_Assignment.CustomCanvas.WriteText
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_WriteText_System_String_
+  name: WriteText
+  nameWithType: CustomCanvas.WriteText
+  fullName: ASE_Assignment.CustomCanvas.WriteText
+- uid: BOOSE.ICanvas.WriteText(System.String)
+  commentId: M:BOOSE.ICanvas.WriteText(System.String)
+  parent: BOOSE.ICanvas
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: WriteText(string)
+  nameWithType: ICanvas.WriteText(string)
+  fullName: BOOSE.ICanvas.WriteText(string)
+  nameWithType.vb: ICanvas.WriteText(String)
+  fullName.vb: BOOSE.ICanvas.WriteText(String)
+  name.vb: WriteText(String)
+  spec.csharp:
+  - uid: BOOSE.ICanvas.WriteText(System.String)
+    name: WriteText
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.WriteText(System.String)
+    name: WriteText
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Drawing.Bitmap
+  commentId: T:System.Drawing.Bitmap
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.drawing.bitmap
+  name: Bitmap
+  nameWithType: Bitmap
+  fullName: System.Drawing.Bitmap
+- uid: ASE_Assignment.CustomCanvas.getBitmap*
+  commentId: Overload:ASE_Assignment.CustomCanvas.getBitmap
+  href: ASE_Assignment.CustomCanvas.html#ASE_Assignment_CustomCanvas_getBitmap
+  name: getBitmap
+  nameWithType: CustomCanvas.getBitmap
+  fullName: ASE_Assignment.CustomCanvas.getBitmap
+- uid: BOOSE.ICanvas.getBitmap
+  commentId: M:BOOSE.ICanvas.getBitmap
+  parent: BOOSE.ICanvas
+  isExternal: true
+  name: getBitmap()
+  nameWithType: ICanvas.getBitmap()
+  fullName: BOOSE.ICanvas.getBitmap()
+  spec.csharp:
+  - uid: BOOSE.ICanvas.getBitmap
+    name: getBitmap
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSE.ICanvas.getBitmap
+    name: getBitmap
+    isExternal: true
+  - name: (
+  - name: )

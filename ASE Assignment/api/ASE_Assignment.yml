@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment
+  commentId: N:ASE_Assignment
+  id: ASE_Assignment
+  children:
+  - ASE_Assignment.CustomCanvas
+  - ASE_Assignment.CustomCommandFactory
+  - ASE_Assignment.Form1
+  langs:
+  - csharp
+  - vb
+  name: ASE_Assignment
+  nameWithType: ASE_Assignment
+  fullName: ASE_Assignment
+  type: Namespace
+  assemblies:
+  - ASE_Assignment
+references:
+- uid: ASE_Assignment.CustomCanvas
+  commentId: T:ASE_Assignment.CustomCanvas
+  href: ASE_Assignment.CustomCanvas.html
+  name: CustomCanvas
+  nameWithType: CustomCanvas
+  fullName: ASE_Assignment.CustomCanvas
+- uid: ASE_Assignment.CustomCommandFactory
+  commentId: T:ASE_Assignment.CustomCommandFactory
+  href: ASE_Assignment.CustomCommandFactory.html
+  name: CustomCommandFactory
+  nameWithType: CustomCommandFactory
+  fullName: ASE_Assignment.CustomCommandFactory
+- uid: ASE_Assignment.Form1
+  commentId: T:ASE_Assignment.Form1
+  href: ASE_Assignment.Form1.html
+  name: Form1
+  nameWithType: Form1
+  fullName: ASE_Assignment.Form1
